@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello, World from Dockerized Python app!"
+    return "This App is deployed by pipeline on Docker!"
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Use Render's PORT if available
